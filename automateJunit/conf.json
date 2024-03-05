@@ -1,0 +1,6 @@
+{
+  "git_url": "https://github.com/LambdaTest/junit-qtest-sample",
+  "local_repository": "junit-qtest-sample",
+  "qtest_api_token": "<your-qtest-api-token>",
+  "qtest_url": "https://<your-qtest-domain>.qtestnet.com"
+}

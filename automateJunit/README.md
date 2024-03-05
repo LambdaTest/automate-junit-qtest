@@ -69,23 +69,23 @@ These commands will install the necessary modules required to run the python scr
 
 **qtest\_url:** The personal url that is used to access QASymphony API
 
-![](./automateJunit/images/config.json.png)
+![](../images/conf.png)
 
 Open the conf.json file and update with your personal information. Enter your own qTest URL and API Token found in the qTest Manager Environment.
 
-For this example we will be pulling a JUnit Sample Test [https://github.com/LambdaTest/junit-qtest-sample](https://github.com/LambdaTest/junit-qtest-sample). For the git url and local repository use the information shown below in the example configuration file. Make sure to use your own api token and url or the demo will not work.
+For this example we will be pulling a JUnit Sample Test from QASymphony GitHub&#39;s junit-sample [https://github.com/QASymphony/junit-sample](https://github.com/QASymphony/junit-sample). For the git url and local repository use the information shown below in the example configuration file. Make sure to use your own api token and url or the demo will not work.
 
-![](./automateJunit/images/config.json.png)
+![](../images/junitconf.png)
 
 ## Set Up Automation:
 
 1. Navigate to your Automation Host
 
- ![](./automateJunit/images/automationhosthome.png)
+ ![](../images/autohost.png)
 
 2.    Add a new agent and fill out the path directory and enter the script into the kick off script field
 
-![](./automateJunit/images/add.png)
+![](../images/add.png)
  
 **Agent Name:** Name
 
@@ -110,9 +110,14 @@ For this example we will be pulling a JUnit Sample Test [https://github.com/Lamb
 To run the shell agent without using GitHub or without updating the existing test cycle do not include these parameters in the kick off scripts section. An example of not using -g is used in the JMeter Automation example.
 
 
+
+In this example we will be pulling tests from GitHub and updating our test cycle, so the -g and -u arguments are included and shown below. The -b argument is used with "develop" to denote the branch that we will be creating.
+
+
+
 ## For Mac Users (Use run.sh):
 
- ![](./automateJunit/images/agentmac.png)
+ ![](../images/junitmachost.png)
 
 Note for Mac Users: Make sure the shell script is executable by running the command shown below in the shell scripts directory:
 
@@ -123,23 +128,38 @@ This command gives the shell script permission to run.
 
 ## For Windows Users (Use run.bat):
 
-![](./automateJunit/images/agentwin.png)
+![](../images/junitwindowshost.png)
  
 ## Running Shell Script:
 
-Start the shell script by pressing `kick-off shell scripts now` button under the action text field, which will upload all of the tests cases to qTest
+Start the shell script by pressing yellow button under the action text field, which will upload all of the tests cases to qTest
 
-![](./automateJunit/images/runscript.png)
+![](../images/runjunit.png)
  
 ## Scheduling Tests:
 
 1.  Login into qTest Manager, go to the Test Execution tab, and there should be a test cycle under your project called &quot;Junit Automated Tests&quot;
 
- ![](./automateJunit/images/junitcycle.png)
+ ![](../images/junitcycle.png)
 
 2. Click on the test cycle and it should show all of the tests that were run through the maven build and their statuses.
 
-![](./automateJunit/images/testcycle.png)
+![](../images/junittests.png)
+ 
+3. To schedule specific tests check the ones that you want to schedule and click on schedule under the &quot;More&quot; drop down menu.
+
+![](../images/schedulejunit.png)
+ 
+
+4. Select the shell agent from under the drop down menu for agent, and click ok
+
+ ![](../images/junitchoosehost.png)
+
+5. Now that the tests have been scheduled to start them go back to the Automation Host and click Poll Now.
+
+![](../images/pollnow.png)
+ 
+The shell script will only run the scheduled tests and upload those results to qTest Manager
 
 **Tips for Maven Build:**
 
