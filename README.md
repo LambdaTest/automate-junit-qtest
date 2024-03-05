@@ -1,3 +1,7 @@
+# Acknowledgments
+
+Before diving into the details of this project, we want to extend our acknowledgment to the [shell-agent-samples](https://github.com/sanjayjohn/shell-agent-samples/tree/master/AutomationHostExamples/automateJunit) repository and its contributors. The code and concepts from this repository have significantly inspired and contributed to the development of this JUnit with Maven Build Automation tool. 
+
 # JUnit with Maven Build Automation
 
 ## Overview:
