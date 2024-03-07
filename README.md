@@ -73,7 +73,7 @@ These commands will install the necessary modules required to run the python scr
 
 **qtest\_url:** The personal url that is used to access QASymphony API
 
-![](./automateJunit/images/config.json.png)
+![](../automateJunit/images/config.json.png)
 
 Open the conf.json file and update with your personal information. Enter your own qTest URL and API Token found in the qTest Manager Environment.
 
