@@ -83,6 +83,57 @@ For this example we will be pulling a JUnit Sample Test [https://github.com/Lamb
 
 ## Set Up Automation:
 
+### qTest Host
+
+1. **Download and Copy the File**
+   - Download `agentctl-[version]-mac-x64-full.tgz` and copy it to your desired installation directory, e.g.:
+     ```
+     /usr/local/agentctl-[version]-mac-x64-full.tgz
+     ```
+
+2. **Extract the Downloaded File**
+   - After downloading, extract the qTest Host file.
+
+3. **Start the Agent**
+   - Navigate to the directory where you extracted the files:
+     ```
+     cd /path/to/agentctl-[version]
+     ```
+   - Start the agent with the following command:
+     ```
+     ./agentctl start
+     ```
+
+4. **Open Command Line (CMD)**
+   - Run this command:
+     ```
+     agentctl.bat start
+     ```
+
+### Accessing the Host
+
+- **Case 1:** If the command runs successfully, open your local browser and go to:
+
+## Nevigate to the 
+```
+http://localhost:6789
+```
+
+- **Case 2:** If you encounter an error like `port 6789 {6789}: could not start`, follow these steps:
+1. Open the directory of qTest Automation Host.
+2. Locate and open `agent.config`.
+3. Change the port number as needed.
+
+5. **Successful Start**
+ - Once the configuration is correct, you should see a message indicating the port has started successfully.
+
+6. **Final Step**
+ - Run this in your browser according to your configured port number:
+   ```
+   http://localhost:6789
+   ```
+ for more detail follow : https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/installation/qtest_automation_host_2.x_installation_guide_on_windows.htm
+
 1. Navigate to your Automation Host
 
  ![](./automateJunit/images/automationhosthome.png)
