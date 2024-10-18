@@ -86,7 +86,11 @@ For this example we will be pulling a JUnit Sample Test [https://github.com/Lamb
 ### qTest Host
 
 1. **Download and Copy the File**
-   - Download `agentctl-[version]-mac-x64-full.tgz` and copy it to your desired installation directory, e.g.:
+   - Download 
+   Link: ```https://support-hub.tricentis.com/open?sys_kb_id=194a54eedb4f5c181ea7bb13f3961950&id=kb_article_view&number=KB0015571
+   ```
+   
+   `agentctl-[version]-mac-x64-full.tgz` and copy it to your desired installation directory, e.g.:
      ```
      /usr/local/agentctl-[version]-mac-x64-full.tgz
      ```
